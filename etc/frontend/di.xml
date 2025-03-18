@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+	<type name="Magento\InventorySales\Model\IsProductSalableCondition\IsAnySourceItemInStockCondition">
+		<plugin name="another-plugin"
+		        type="ECInternet\InventoryFeatures\Plugin\Magento\InventorySales\Model\IsProductSalableCondition\IsAnySourceItemInStockConditionPlugin" />
+	</type>
+
+	<type name="Magento\InventorySales\Model\IsProductSalableForRequestedQtyCondition\IsAnySourceItemInStockCondition">
+		<plugin name="is-any-source-item-in-stock-condition"
+		        type="ECInternet\InventoryFeatures\Plugin\Magento\InventorySales\Model\IsProductSalableForRequestedQtyCondition\IsAnySourceItemInStockConditionPlugin" />
+	</type>
+
+	<type name="Magento\InventorySales\Model\ResourceModel\GetIsAnySourceItemInStock">
+		<plugin name="any-source-item-in-stock"
+		        type="ECInternet\InventoryFeatures\Plugin\Magento\InventorySales\Model\ResourceModel\GetIsAnySourceItemInStockPlugin" />
+	</type>
+
+	<type name="Magento\Quote\Model\Quote">
+		<plugin name="quote-plugin"
+		        type="ECInternet\InventoryFeatures\Plugin\Magento\Quote\Model\QuotePlugin" />
+	</type>
+</config>
