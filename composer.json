@@ -5,7 +5,7 @@
 	"type": "magento2-module",
 	"require": {
 		"magento/framework": "*",
-		"ecinternet/base": "1.3.3.*",
+		"ecinternet/base": "*",
 		"magento/module-inventory-sales": "1.2.*"
 	},
 	"license": [
