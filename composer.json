@@ -6,7 +6,7 @@
 	"require": {
 		"magento/framework": "*",
 		"ecinternet/base": "*",
-		"magento/module-inventory-sales": "1.2.*"
+		"magento/module-inventory-sales": ">=1.2"
 	},
 	"license": [
 		"OSL-3.0",
