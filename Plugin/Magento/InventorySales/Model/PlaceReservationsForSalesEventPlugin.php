@@ -10,7 +10,7 @@ namespace ECInternet\InventoryFeatures\Plugin\Magento\InventorySales\Model;
 use Magento\InventorySalesApi\Api\Data\SalesChannelInterface;
 use Magento\InventorySalesApi\Api\Data\SalesEventInterface;
 use Magento\InventorySales\Model\PlaceReservationsForSalesEvent;
-use ECInternet\InventoryFeatures\Logger\Logger;
+use Psr\Log\LoggerInterface;
 
 /**
  * Plugin for Magento\InventorySales\Model\PlaceReservationsForSalesEvent
@@ -18,17 +18,17 @@ use ECInternet\InventoryFeatures\Logger\Logger;
 class PlaceReservationsForSalesEventPlugin
 {
     /**
-     * @var \ECInternet\InventoryFeatures\Logger\Logger
+     * @var \Psr\Log\LoggerInterface
      */
     private $logger;
 
     /**
      * PlaceReservationsForSalesEventPlugin constructor.
      *
-     * @param \ECInternet\InventoryFeatures\Logger\Logger $logger
+     * @param \Psr\Log\LoggerInterface $logger
      */
     public function __construct(
-        Logger $logger
+        LoggerInterface $logger
     ) {
         $this->logger = $logger;
     }

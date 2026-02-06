@@ -1,13 +1,14 @@
 {
 	"name": "ecinternet/inventoryfeatures",
-	"version": "1.0.0",
-	"description": "N/A",
-	"type": "magento2-module",
+	"description": "EC Internet Inventory Features",
 	"require": {
+		"php": "~8.2.0||~8.3.0",
 		"magento/framework": "*",
 		"ecinternet/base": "*",
 		"magento/module-inventory-sales": ">=1.2"
 	},
+	"type": "magento2-module",
+	"version": "1.0.0",
 	"license": [
 		"OSL-3.0",
 		"AFL-3.0"

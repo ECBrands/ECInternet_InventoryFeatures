@@ -21,13 +21,12 @@
 	<preference for="Magento\InventorySourceSelectionApi\Model\GetSourceItemQtyAvailableInterface"
 	            type="Magento\InventorySourceSelectionApi\Model\GetSourceItemQtyAvailableService" />
 
-	<!-- Custom Logger -->
-	<type name="ECInternet\InventoryFeatures\Logger\Logger">
+	<!-- Custom Logger - Must be injected into each class which needs it -->
+	<virtualType name="ECInternetInventoryFeaturesLogger" type="Magento\Framework\Logger\Monolog">
 		<arguments>
-			<argument name="name" xsi:type="string">InventoryFeatures</argument>
 			<argument name="handlers" xsi:type="array">
-				<item name="system" xsi:type="object">ECInternet\InventoryFeatures\Logger\Handler</item>
+				<item name="info" xsi:type="object">ECInternet\InventoryFeatures\Logger\Handler</item>
 			</argument>
 		</arguments>
-	</type>
+	</virtualType>
 </config>
